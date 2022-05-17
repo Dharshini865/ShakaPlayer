@@ -22,7 +22,7 @@ export default class Player extends Lightning.Component {
         w: 50,
         h: 50,
         type: Tile,
-        src: '../static/images/Pause.jpg',
+        src: '../static/images/Play.jpg',
       },
       PrevButton: {
         x: 550,
@@ -38,7 +38,7 @@ export default class Player extends Lightning.Component {
         w: 50,
         h: 50,
         type: Tile,
-        src: '../static/images/NextIcon.png',
+        src: '../static/images/Next.png',
       },
     }
   }
@@ -61,10 +61,10 @@ export default class Player extends Lightning.Component {
         }
         _handleEnter() {
           if (this.isPlaying()) {
-            this.tag('PlayButton').patch({ src: '../static/images/PlayIcon.png' })
+            this.tag('PlayButton').patch({ src: '../static/images/Pause.png' })
             this.tag('MediaPlayer').doPause()
           } else {
-            this.tag('PlayButton').patch({ src: '../static/images/Pause.jpg' })
+            this.tag('PlayButton').patch({ src: '../static/images/Play.jpg' })
             this.tag('MediaPlayer').doPlay()
           }
         }
