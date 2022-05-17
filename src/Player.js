@@ -11,7 +11,6 @@ export default class Player extends Lightning.Component {
       Background: {
         w: 1950,
         h: 116,
-        // x: 400,
         y: 950,
         rect: true,
         color: 0xff000000,
@@ -23,7 +22,7 @@ export default class Player extends Lightning.Component {
         w: 50,
         h: 50,
         type: Tile,
-        src: '../static/images/Icon2.jpg',
+        src: '../static/images/Pause.jpg',
       },
       PrevButton: {
         x: 550,
@@ -31,7 +30,7 @@ export default class Player extends Lightning.Component {
         w: 50,
         h: 50,
         type: Tile,
-        src: '../static/images/Icon1.jpg',
+        src: '../static/images/Prev.jpg',
       },
       NextButton: {
         x: 750,
@@ -65,7 +64,7 @@ export default class Player extends Lightning.Component {
             this.tag('PlayButton').patch({ src: '../static/images/PlayIcon.png' })
             this.tag('MediaPlayer').doPause()
           } else {
-            this.tag('PlayButton').patch({ src: '../static/images/Icon2.jpg' })
+            this.tag('PlayButton').patch({ src: '../static/images/Pause.jpg' })
             this.tag('MediaPlayer').doPlay()
           }
         }
