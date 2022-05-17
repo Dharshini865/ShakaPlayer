@@ -84,7 +84,6 @@ export default class Player extends Lightning.Component {
           this._setState('PlayButton')
         }
         _handleEnter() {
-          console.log('demo')
           this.fireAncestors('$playerEnter', this.index)
         }
       },
@@ -96,7 +95,6 @@ export default class Player extends Lightning.Component {
           this._setState('PlayButton')
         }
         _handleEnter() {
-          console.log('player')
           this.fireAncestors('$playerEnter', this.index)
         }
       },
